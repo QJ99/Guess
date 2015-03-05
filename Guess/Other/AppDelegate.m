@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "MyNavViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,8 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [_window setBackgroundColor:[UIColor whiteColor]];
     MainViewController *main = [[MainViewController alloc]init];
-    [_window setRootViewController:main];
+    MyNavViewController *mainNav = [[MyNavViewController alloc]initWithRootViewController:main];
+    [_window setRootViewController:mainNav];
     [_window makeKeyAndVisible];
     return YES;
 }

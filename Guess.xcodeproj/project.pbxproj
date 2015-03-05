@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31B8E06A1AA88EFE0052498A /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E0681AA88EFE0052498A /* PlayViewController.m */; };
+		31B8E06B1AA88EFE0052498A /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8E0691AA88EFE0052498A /* PlayViewController.xib */; };
+		31B8E0771AA899DF0052498A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E0741AA899DF0052498A /* SettingViewController.m */; };
+		31B8E0781AA899DF0052498A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8E0751AA899DF0052498A /* SettingViewController.xib */; };
+		31B8E07B1AA89A0F0052498A /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E07A1AA89A0F0052498A /* SettingModel.m */; };
 		9344BE6E1AA82DA500E68858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9344BE6D1AA82DA500E68858 /* main.m */; };
 		9344BE7C1AA82DA500E68858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9344BE7B1AA82DA500E68858 /* Images.xcassets */; };
 		9344BE8B1AA82DA500E68858 /* GuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9344BE8A1AA82DA500E68858 /* GuessTests.m */; };
@@ -1107,6 +1112,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31B8E0671AA88EFE0052498A /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		31B8E0681AA88EFE0052498A /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		31B8E0691AA88EFE0052498A /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayViewController.xib; sourceTree = "<group>"; };
+		31B8E0731AA899DF0052498A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		31B8E0741AA899DF0052498A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		31B8E0751AA899DF0052498A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		31B8E0791AA89A0F0052498A /* SettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		31B8E07A1AA89A0F0052498A /* SettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
 		9344BE681AA82DA500E68858 /* Guess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9344BE6C1AA82DA500E68858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9344BE6D1AA82DA500E68858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -2222,6 +2235,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31B8E0661AA88EEC0052498A /* palyController */ = {
+			isa = PBXGroup;
+			children = (
+				31B8E0671AA88EFE0052498A /* PlayViewController.h */,
+				31B8E0681AA88EFE0052498A /* PlayViewController.m */,
+				31B8E0691AA88EFE0052498A /* PlayViewController.xib */,
+			);
+			path = palyController;
+			sourceTree = "<group>";
+		};
+		31B8E06C1AA898700052498A /* SettingController */ = {
+			isa = PBXGroup;
+			children = (
+				31B8E0721AA899DF0052498A /* Controller */,
+				31B8E0761AA899DF0052498A /* Model */,
+			);
+			path = SettingController;
+			sourceTree = "<group>";
+		};
+		31B8E0721AA899DF0052498A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31B8E0731AA899DF0052498A /* SettingViewController.h */,
+				31B8E0741AA899DF0052498A /* SettingViewController.m */,
+				31B8E0751AA899DF0052498A /* SettingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		31B8E0761AA899DF0052498A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31B8E0791AA89A0F0052498A /* SettingModel.h */,
+				31B8E07A1AA89A0F0052498A /* SettingModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9344BE5F1AA82DA500E68858 = {
 			isa = PBXGroup;
 			children = (
@@ -2282,6 +2333,8 @@
 		9344BE941AA82E0800E68858 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				31B8E06C1AA898700052498A /* SettingController */,
+				31B8E0661AA88EEC0052498A /* palyController */,
 				9344C7521AA835A800E68858 /* MainController */,
 			);
 			path = Controller;
@@ -3589,6 +3642,7 @@
 				9344CE231AA83D5E00E68858 /* question403.png in Resources */,
 				9344CF191AA83D5E00E68858 /* question5916.png in Resources */,
 				9344CFBC1AA83D5E00E68858 /* 61.mp3 in Resources */,
+				31B8E06B1AA88EFE0052498A /* PlayViewController.xib in Resources */,
 				9344CEC51AA83D5E00E68858 /* question522.png in Resources */,
 				9344CDB51AA83D5E00E68858 /* question3334.png in Resources */,
 				9344CCDD1AA83D5E00E68858 /* question3061.png in Resources */,
@@ -3793,6 +3847,7 @@
 				9344CE201AA83D5E00E68858 /* question400.png in Resources */,
 				9344CDDC1AA83D5E00E68858 /* question3378.png in Resources */,
 				9344CD1D1AA83D5E00E68858 /* question3126.png in Resources */,
+				31B8E0781AA899DF0052498A /* SettingViewController.xib in Resources */,
 				9344CC301AA83D5E00E68858 /* question157.png in Resources */,
 				9344CE131AA83D5E00E68858 /* question3436.png in Resources */,
 				9344CBB51AA83D5E00E68858 /* question1021.png in Resources */,
@@ -4661,11 +4716,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B8E07B1AA89A0F0052498A /* SettingModel.m in Sources */,
 				9344C75E1AA83B6700E68858 /* MyNavViewController.m in Sources */,
 				9344BE6E1AA82DA500E68858 /* main.m in Sources */,
 				9344C7561AA835EE00E68858 /* BaseViewController.m in Sources */,
 				9344BE991AA82E0800E68858 /* AppDelegate.m in Sources */,
+				31B8E06A1AA88EFE0052498A /* PlayViewController.m in Sources */,
 				9344C75A1AA835FD00E68858 /* MainViewController.m in Sources */,
+				31B8E0771AA899DF0052498A /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

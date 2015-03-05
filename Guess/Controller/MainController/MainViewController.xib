@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceButton" destination="i1O-8z-M9E" id="A5C-Wr-Yne"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -35,9 +36,13 @@
                 </imageView>
                 <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FM_wenzi_kaishi_cn" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-8Z-XLf">
                     <rect key="frame" x="111" y="292" width="98" height="30"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="1Kh-GM-HZK"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="gdx-2j-f8K" appends="YES" id="3ag-TY-CDl"/>
+                    </connections>
                 </imageView>
                 <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FM_wenzi_jingsai_tw" translatesAutoresizingMaskIntoConstraints="NO" id="pAF-MV-amJ">
                     <rect key="frame" x="111" y="372" width="98" height="30"/>
@@ -45,10 +50,37 @@
                         <constraint firstAttribute="height" constant="30" id="gZ4-Oj-rvH"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1O-8z-M9E">
+                    <rect key="frame" x="268" y="21" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3tj-OC-6N0"/>
+                        <constraint firstAttribute="width" constant="44" id="U6N-Vc-slB"/>
+                    </constraints>
+                    <state key="normal" image="btn_voice_on">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setVoice:" destination="-1" eventType="touchUpInside" id="Ivf-EF-ArX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkL-Jc-uxO">
+                    <rect key="frame" x="268" y="495" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="2Nn-as-WY4"/>
+                        <constraint firstAttribute="height" constant="44" id="Xo0-yV-vYR"/>
+                    </constraints>
+                    <state key="normal" image="btn_setting">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="settingApp:" destination="-1" eventType="touchUpInside" id="1et-NF-wg3"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ocS-8Z-XLf" secondAttribute="trailing" constant="111" id="3tL-qU-fso"/>
+                <constraint firstAttribute="trailing" secondItem="i1O-8z-M9E" secondAttribute="trailing" constant="8" id="5dp-ye-ZKE"/>
                 <constraint firstAttribute="trailing" secondItem="l7S-Ku-Bta" secondAttribute="trailing" constant="25" id="61t-Yc-YaM"/>
                 <constraint firstItem="wCc-xH-uun" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GEu-6x-Cny"/>
                 <constraint firstItem="l7S-Ku-Bta" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="LFH-Ib-SB2"/>
@@ -58,19 +90,27 @@
                 <constraint firstItem="pAF-MV-amJ" firstAttribute="leading" secondItem="VJh-9j-s5q" secondAttribute="leading" id="SxZ-ro-48g"/>
                 <constraint firstItem="ocS-8Z-XLf" firstAttribute="centerX" secondItem="pAF-MV-amJ" secondAttribute="centerX" id="VZs-P7-Uu6"/>
                 <constraint firstAttribute="bottom" secondItem="wCc-xH-uun" secondAttribute="bottom" id="Vz3-mD-hcx"/>
+                <constraint firstItem="i1O-8z-M9E" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="WFa-1I-PvE"/>
                 <constraint firstItem="4aD-uU-r2I" firstAttribute="centerX" secondItem="VJh-9j-s5q" secondAttribute="centerX" id="YCD-LZ-vJS"/>
                 <constraint firstAttribute="trailing" secondItem="4aD-uU-r2I" secondAttribute="trailing" constant="111" id="YtS-s5-RtA"/>
                 <constraint firstAttribute="trailing" secondItem="wCc-xH-uun" secondAttribute="trailing" id="a85-iM-NAX"/>
+                <constraint firstAttribute="bottom" secondItem="UkL-Jc-uxO" secondAttribute="bottom" constant="29" id="f7U-90-137"/>
                 <constraint firstItem="ocS-8Z-XLf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="111" id="ihj-gg-Oba"/>
                 <constraint firstItem="ocS-8Z-XLf" firstAttribute="top" secondItem="l7S-Ku-Bta" secondAttribute="bottom" constant="28" id="itt-Ax-iKo"/>
                 <constraint firstItem="pAF-MV-amJ" firstAttribute="top" secondItem="ocS-8Z-XLf" secondAttribute="bottom" constant="50" id="lvA-Rg-yuE"/>
                 <constraint firstItem="4aD-uU-r2I" firstAttribute="height" secondItem="VJh-9j-s5q" secondAttribute="height" id="mVr-Xn-2Ni"/>
                 <constraint firstItem="wCc-xH-uun" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q6K-e2-6I0"/>
+                <constraint firstAttribute="trailing" secondItem="UkL-Jc-uxO" secondAttribute="trailing" constant="8" id="q6t-Wf-rM8"/>
                 <constraint firstItem="VJh-9j-s5q" firstAttribute="top" secondItem="4aD-uU-r2I" secondAttribute="bottom" constant="50" id="soe-Jv-eEZ"/>
                 <constraint firstItem="4aD-uU-r2I" firstAttribute="top" secondItem="l7S-Ku-Bta" secondAttribute="bottom" constant="28" id="yE2-Uk-sEJ"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer id="gdx-2j-f8K">
+            <connections>
+                <action selector="startGuess:" destination="-1" id="LNf-gK-93G"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="FM_beijing" width="768" height="1024"/>
@@ -79,5 +119,7 @@
         <image name="FM_btn_jingsai_sel" width="195" height="59"/>
         <image name="FM_wenzi_jingsai_tw" width="121" height="31"/>
         <image name="FM_wenzi_kaishi_cn" width="130" height="32"/>
+        <image name="btn_setting" width="36" height="38"/>
+        <image name="btn_voice_on" width="34" height="36"/>
     </resources>
 </document>

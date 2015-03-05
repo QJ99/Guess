@@ -7,17 +7,40 @@
 //
 
 #import "MainViewController.h"
-
+#import "PlayViewController.h"
+#import "SettingViewController.h"
 @interface MainViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *voiceButton;
 
 @end
 
 @implementation MainViewController
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.view setBackgroundColor:[UIColor redColor]];
+    BOOL selected =[[NSUserDefaults standardUserDefaults]boolForKey:@"voice"];
+    _voiceButton.selected = selected;
+    [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_off"] forState:UIControlStateSelected];
+    [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_on"] forState:UIControlStateNormal];
+}
+- (IBAction)startGuess:(UITapGestureRecognizer *)sender {
+    PlayViewController *play = [[PlayViewController alloc]init];
+    [self.navigationController pushViewController:play animated:YES];
+}
+- (IBAction)setVoice:(UIButton *)sender {
+    [[NSUserDefaults standardUserDefaults]setBool:!sender.selected forKey:@"voice"];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    sender.selected = !sender.selected;
+    [sender setImage:[UIImage imageNamed:@"btn_voice_off"] forState:UIControlStateSelected];
+    [sender setImage:[UIImage imageNamed:@"btn_voice_on"] forState:UIControlStateNormal];
+}
+- (IBAction)settingApp:(id)sender {
+    SettingViewController *setting = [[SettingViewController alloc]init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
