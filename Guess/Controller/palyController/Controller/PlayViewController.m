@@ -7,13 +7,15 @@
 //
 
 #import "PlayViewController.h"
-
+#import "UIImage+QJ.h"
 @interface PlayViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle1;
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle2;
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle3;
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle4;
+@property (weak, nonatomic) IBOutlet UIButton *removeErrorButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *noticeButton;
 @end
 
 @implementation PlayViewController
@@ -41,6 +43,10 @@
     
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithCustomView:bottomView];
     self.navigationItem.leftBarButtonItem = leftButton;
+    [_removeErrorButton setBackgroundImage:[UIImage resizedImage:@"cydg_goumai"] forState:UIControlStateNormal];
+    [_noticeButton setBackgroundImage:[UIImage resizedImage:@"cydg_goumai"] forState:UIControlStateNormal];
+    
+    
 }
 #pragma mark -guessButtonClick
 - (IBAction)guessButtonClick:(UIButton *)sender {
@@ -49,6 +55,8 @@
 #pragma mark -返回手势
 -(void)tapBackButton:(UITapGestureRecognizer*)tap{
     [self.navigationController popViewControllerAnimated:YES];
+}
+- (IBAction)helpButton:(UIButton *)sender {
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
