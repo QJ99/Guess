@@ -9,6 +9,10 @@
 #import "PlayViewController.h"
 
 @interface PlayViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *guessTitle1;
+@property (weak, nonatomic) IBOutlet UIButton *guessTitle2;
+@property (weak, nonatomic) IBOutlet UIButton *guessTitle3;
+@property (weak, nonatomic) IBOutlet UIButton *guessTitle4;
 
 @end
 
@@ -19,8 +23,33 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationController.navigationBar.hidden = NO;
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+    UIImageView *bottomView = [[UIImageView alloc]init];
+    bottomView.userInteractionEnabled = YES;
+    [bottomView setContentMode:UIViewContentModeScaleAspectFit];
+    bottomView.bounds = CGRectMake(0, 0, 60, 30);
+    [bottomView setImage:[UIImage imageNamed:@"ZJM_btn_fanhui.png"]];
+    
+    UIImageView *titleView = [[UIImageView alloc]init];
+    titleView.userInteractionEnabled = YES;
+    [titleView setContentMode:UIViewContentModeScaleAspectFit];
+    titleView.frame = CGRectMake(bottomView.frame.size.width-35, 0, 30, 30);
+    [bottomView addSubview:titleView];
+    [titleView setImage:[UIImage imageNamed:@"ZJM_wz_back.png"]];
+    UITapGestureRecognizer *tapBottomView = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapBackButton:)];
+    [bottomView addGestureRecognizer:tapBottomView];
+    
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]initWithCustomView:bottomView];
+    self.navigationItem.leftBarButtonItem = leftButton;
+}
+#pragma mark -guessButtonClick
+- (IBAction)guessButtonClick:(UIButton *)sender {
 }
 
+#pragma mark -返回手势
+-(void)tapBackButton:(UITapGestureRecognizer*)tap{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
