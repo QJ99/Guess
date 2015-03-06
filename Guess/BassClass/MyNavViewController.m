@@ -7,16 +7,29 @@
 //
 
 #import "MyNavViewController.h"
-
+#import "UIImage+QJ.h"
 @interface MyNavViewController ()
 
 @end
 
 @implementation MyNavViewController
-
++(void)initialize{
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:[UIImage resizedImage:@"shop_buttons_bg.png"] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
+    [bar setTitleTextAttributes:@{
+                                  NSForegroundColorAttributeName : [UIColor whiteColor]
+                                  }];
+//    bar.translucent = NO;
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationBar.translucent = NO;
+  
+}
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {

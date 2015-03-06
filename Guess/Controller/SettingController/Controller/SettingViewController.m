@@ -35,7 +35,18 @@
     SettingModel *model4 = [[SettingModel alloc]init];
     model4.title = @"当前版本号";
     model4.setType = arrowsType;
-    _dataSource = [NSMutableArray arrayWithObjects:@[model1],@[model2,model3,model4], nil];
+    _dataSource = [NSMutableArray arrayWithObjects:@[model1],@[model2,model4,model3], nil];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"common_back.png"] forState:UIControlStateNormal];
+    button.bounds = CGRectMake(0, 0, 40, 44);
+    [button addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = rightItem;
+}
+#pragma mark -返回按钮点击
+-(void)backClick:(UIButton*)button{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 #pragma mark -tableviewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -50,7 +61,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
+
     SettingModel *model = _dataSource[indexPath.section][indexPath.row];
     cell.textLabel.text = model.title;
     return cell;

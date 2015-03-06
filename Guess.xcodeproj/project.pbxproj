@@ -1099,6 +1099,7 @@
 		9344CFD41AA83D5E00E68858 /* xiaoxian203.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344CB9D1AA83D5E00E68858 /* xiaoxian203.png */; };
 		9344CFD51AA83D5E00E68858 /* xiaoxian22.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344CB9E1AA83D5E00E68858 /* xiaoxian22.png */; };
 		9344CFD61AA83D5E00E68858 /* xiaoxian59.png in Resources */ = {isa = PBXBuildFile; fileRef = 9344CB9F1AA83D5E00E68858 /* xiaoxian59.png */; };
+		9344CFDA1AA958DE00E68858 /* UIImage+QJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 9344CFD91AA958DE00E68858 /* UIImage+QJ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2215,6 +2216,8 @@
 		9344CB9D1AA83D5E00E68858 /* xiaoxian203.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoxian203.png; sourceTree = "<group>"; };
 		9344CB9E1AA83D5E00E68858 /* xiaoxian22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoxian22.png; sourceTree = "<group>"; };
 		9344CB9F1AA83D5E00E68858 /* xiaoxian59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xiaoxian59.png; sourceTree = "<group>"; };
+		9344CFD81AA958DE00E68858 /* UIImage+QJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QJ.h"; sourceTree = "<group>"; };
+		9344CFD91AA958DE00E68858 /* UIImage+QJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QJ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2294,6 +2297,7 @@
 		9344BE6A1AA82DA500E68858 /* Guess */ = {
 			isa = PBXGroup;
 			children = (
+				9344CFD71AA956BE00E68858 /* Category */,
 				9344C7531AA835DD00E68858 /* BassClass */,
 				9344BE941AA82E0800E68858 /* Controller */,
 				9344BE951AA82E0800E68858 /* Other */,
@@ -3536,6 +3540,15 @@
 			path = xhy;
 			sourceTree = "<group>";
 		};
+		9344CFD71AA956BE00E68858 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9344CFD81AA958DE00E68858 /* UIImage+QJ.h */,
+				9344CFD91AA958DE00E68858 /* UIImage+QJ.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4721,6 +4734,7 @@
 				9344BE6E1AA82DA500E68858 /* main.m in Sources */,
 				9344C7561AA835EE00E68858 /* BaseViewController.m in Sources */,
 				9344BE991AA82E0800E68858 /* AppDelegate.m in Sources */,
+				9344CFDA1AA958DE00E68858 /* UIImage+QJ.m in Sources */,
 				31B8E06A1AA88EFE0052498A /* PlayViewController.m in Sources */,
 				9344C75A1AA835FD00E68858 /* MainViewController.m in Sources */,
 				31B8E0771AA899DF0052498A /* SettingViewController.m in Sources */,
