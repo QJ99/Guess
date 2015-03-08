@@ -11,7 +11,13 @@
 @implementation TitleCollectionViewCell
 
 - (void)awakeFromNib {
+//    [_showTitle setTextColor:[UIColor blackColor]];
+    
     // Initialization code
+}
++(TitleCollectionViewCell*)MineHeadView{
+    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"TitleCollectionViewCell" owner:self options:nil];
+    return [nib objectAtIndex:0];
 }
 
 @end

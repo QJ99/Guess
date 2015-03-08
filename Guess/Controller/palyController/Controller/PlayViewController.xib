@@ -7,10 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayViewController">
             <connections>
+                <outlet property="guessImage" destination="1Rm-vb-e1A" id="bT7-we-vMr"/>
                 <outlet property="guessTitle1" destination="3M8-bG-Sot" id="NTQ-OW-IdQ"/>
                 <outlet property="guessTitle2" destination="w60-Lp-T3F" id="ifx-h2-9e1"/>
                 <outlet property="guessTitle3" destination="csx-w7-goQ" id="1PA-zg-UQX"/>
                 <outlet property="guessTitle4" destination="Jpf-Af-b2L" id="xim-3h-7Vg"/>
+                <outlet property="myCollectionView" destination="FPb-T9-jvI" id="cb2-qG-sYK"/>
                 <outlet property="noticeButton" destination="56q-Aj-ojJ" id="lV7-4Y-xQT"/>
                 <outlet property="removeErrorButton" destination="xrF-x2-cVF" id="Y0j-eF-Eak"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -26,7 +28,7 @@
                 </imageView>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w60-Lp-T3F">
                     <rect key="frame" x="105" y="60" width="40" height="40"/>
-                    <state key="normal" title="Button" image="answer">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -35,7 +37,7 @@
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csx-w7-goQ">
                     <rect key="frame" x="175" y="60" width="40" height="40"/>
-                    <state key="normal" title="Button" image="answer">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -50,7 +52,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="aRA-hE-72h"/>
                     </constraints>
-                    <state key="normal" title="Button" image="answer">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -59,14 +61,14 @@
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-Af-b2L">
                     <rect key="frame" x="245" y="60" width="40" height="40"/>
-                    <state key="normal" title="Button" image="answer">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="guessButtonClick:" destination="-1" eventType="touchUpInside" id="1lV-SH-mQv"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrF-x2-cVF">
+                <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrF-x2-cVF">
                     <rect key="frame" x="35" y="350" width="121" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="hkY-J7-Wy5"/>
@@ -88,7 +90,7 @@
                     </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-T9-jvI">
-                    <rect key="frame" x="10" y="388" width="300" height="160"/>
+                    <rect key="frame" x="10" y="388" width="300" height="140"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="So8-is-Orl">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -107,7 +109,7 @@
                 <constraint firstItem="csx-w7-goQ" firstAttribute="bottom" secondItem="Jpf-Af-b2L" secondAttribute="bottom" id="6i2-1l-NOF"/>
                 <constraint firstItem="56q-Aj-ojJ" firstAttribute="leading" secondItem="xrF-x2-cVF" secondAttribute="trailing" constant="8" id="8ak-mu-GZp"/>
                 <constraint firstItem="Saf-wF-hSx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AhM-64-rMt"/>
-                <constraint firstAttribute="bottom" secondItem="FPb-T9-jvI" secondAttribute="bottom" constant="20" id="Ane-AD-6OK"/>
+                <constraint firstAttribute="bottom" secondItem="FPb-T9-jvI" secondAttribute="bottom" constant="40" id="Ane-AD-6OK"/>
                 <constraint firstItem="Jpf-Af-b2L" firstAttribute="leading" secondItem="csx-w7-goQ" secondAttribute="trailing" constant="30" id="Ave-6e-QsF"/>
                 <constraint firstAttribute="trailing" secondItem="Saf-wF-hSx" secondAttribute="trailing" id="FLj-Qh-eTs"/>
                 <constraint firstItem="w60-Lp-T3F" firstAttribute="leading" secondItem="3M8-bG-Sot" secondAttribute="trailing" constant="30" id="FUP-gi-Unq"/>
@@ -144,6 +146,5 @@
     </objects>
     <resources>
         <image name="ZJM_cbg" width="9" height="9"/>
-        <image name="answer" width="39" height="39"/>
     </resources>
 </document>

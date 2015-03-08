@@ -10,5 +10,4 @@
 
 @interface TitleCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *showTitle;
-
 @end
