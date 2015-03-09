@@ -51,8 +51,6 @@
 		319D33DA1AAC174C00DCE9BB /* playModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D33D91AAC174C00DCE9BB /* playModel.m */; };
 		319D33DD1AAC32D200DCE9BB /* winAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D33DC1AAC32D200DCE9BB /* winAlterView.m */; };
 		319D33DF1AAC32E700DCE9BB /* winAlterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319D33DE1AAC32E700DCE9BB /* winAlterView.xib */; };
-		319D33F41AAC7C3000DCE9BB /* CompetitionControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D33F21AAC7C3000DCE9BB /* CompetitionControllerView.m */; };
-		319D33F51AAC7C3000DCE9BB /* CompetitionControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319D33F31AAC7C3000DCE9BB /* CompetitionControllerView.xib */; };
 		31B8E0771AA899DF0052498A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E0741AA899DF0052498A /* SettingViewController.m */; };
 		31B8E0781AA899DF0052498A /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8E0751AA899DF0052498A /* SettingViewController.xib */; };
 		31B8E07B1AA89A0F0052498A /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8E07A1AA89A0F0052498A /* SettingModel.m */; };
@@ -68,6 +66,13 @@
 		9344C75B1AA835FD00E68858 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9344C7591AA835FD00E68858 /* MainViewController.xib */; };
 		9344C75E1AA83B6700E68858 /* MyNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9344C75D1AA83B6700E68858 /* MyNavViewController.m */; };
 		9344CFDA1AA958DE00E68858 /* UIImage+QJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 9344CFD91AA958DE00E68858 /* UIImage+QJ.m */; };
+		93F4B49A1AAD5CD700E98F7A /* CompetitionControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4B4971AAD5CD700E98F7A /* CompetitionControllerView.m */; };
+		93F4B49B1AAD5CD700E98F7A /* CompetitionControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F4B4981AAD5CD700E98F7A /* CompetitionControllerView.xib */; };
+		93F4B49E1AAD5CF900E98F7A /* DisPlayScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F4B49D1AAD5CF900E98F7A /* DisPlayScore.m */; };
+		93F4B4A01AAD5D0800E98F7A /* DisPlayScore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F4B49F1AAD5D0800E98F7A /* DisPlayScore.xib */; };
+		93F4B4A21AAD72AB00E98F7A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F4B4A11AAD72AB00E98F7A /* AVFoundation.framework */; };
+		93F4B4A41AAD73AF00E98F7A /* loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93F4B4A31AAD73AF00E98F7A /* loop.mp3 */; };
+		93F4B4A61AAD993B00E98F7A /* question26.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F4B4A51AAD993B00E98F7A /* question26.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,9 +132,6 @@
 		319D33DB1AAC32D200DCE9BB /* winAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winAlterView.h; sourceTree = "<group>"; };
 		319D33DC1AAC32D200DCE9BB /* winAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = winAlterView.m; sourceTree = "<group>"; };
 		319D33DE1AAC32E700DCE9BB /* winAlterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = winAlterView.xib; sourceTree = "<group>"; };
-		319D33F11AAC7C3000DCE9BB /* CompetitionControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompetitionControllerView.h; sourceTree = "<group>"; };
-		319D33F21AAC7C3000DCE9BB /* CompetitionControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompetitionControllerView.m; sourceTree = "<group>"; };
-		319D33F31AAC7C3000DCE9BB /* CompetitionControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompetitionControllerView.xib; sourceTree = "<group>"; };
 		31B8E0731AA899DF0052498A /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		31B8E0741AA899DF0052498A /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		31B8E0751AA899DF0052498A /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +160,15 @@
 		9344C75D1AA83B6700E68858 /* MyNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavViewController.m; sourceTree = "<group>"; };
 		9344CFD81AA958DE00E68858 /* UIImage+QJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QJ.h"; sourceTree = "<group>"; };
 		9344CFD91AA958DE00E68858 /* UIImage+QJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QJ.m"; sourceTree = "<group>"; };
+		93F4B4961AAD5CD700E98F7A /* CompetitionControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompetitionControllerView.h; sourceTree = "<group>"; };
+		93F4B4971AAD5CD700E98F7A /* CompetitionControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompetitionControllerView.m; sourceTree = "<group>"; };
+		93F4B4981AAD5CD700E98F7A /* CompetitionControllerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompetitionControllerView.xib; sourceTree = "<group>"; };
+		93F4B49C1AAD5CF900E98F7A /* DisPlayScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisPlayScore.h; path = Guess/Controller/competitionController/DisPlayScore.h; sourceTree = SOURCE_ROOT; };
+		93F4B49D1AAD5CF900E98F7A /* DisPlayScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisPlayScore.m; path = Guess/Controller/competitionController/DisPlayScore.m; sourceTree = SOURCE_ROOT; };
+		93F4B49F1AAD5D0800E98F7A /* DisPlayScore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisPlayScore.xib; sourceTree = "<group>"; };
+		93F4B4A11AAD72AB00E98F7A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		93F4B4A31AAD73AF00E98F7A /* loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loop.mp3; sourceTree = "<group>"; };
+		93F4B4A51AAD993B00E98F7A /* question26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question26.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F4B4A21AAD72AB00E98F7A /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +193,7 @@
 		319D33861AAC108A00DCE9BB /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				93F4B4A31AAD73AF00E98F7A /* loop.mp3 */,
 				319D33891AAC10A200DCE9BB /* customerimage */,
 				319D33871AAC109100DCE9BB /* source.plist */,
 			);
@@ -190,6 +203,7 @@
 		319D33891AAC10A200DCE9BB /* customerimage */ = {
 			isa = PBXGroup;
 			children = (
+				93F4B4A51AAD993B00E98F7A /* question26.png */,
 				319D338A1AAC10A200DCE9BB /* question1.png */,
 				319D338B1AAC10A200DCE9BB /* question10.png */,
 				319D338C1AAC10A200DCE9BB /* question11.png */,
@@ -236,9 +250,8 @@
 		319D33EB1AAC7BEE00DCE9BB /* competitionController */ = {
 			isa = PBXGroup;
 			children = (
-				319D33F11AAC7C3000DCE9BB /* CompetitionControllerView.h */,
-				319D33F21AAC7C3000DCE9BB /* CompetitionControllerView.m */,
-				319D33F31AAC7C3000DCE9BB /* CompetitionControllerView.xib */,
+				93F4B4951AAD5CD700E98F7A /* Controller */,
+				93F4B4991AAD5CD700E98F7A /* View */,
 			);
 			path = competitionController;
 			sourceTree = "<group>";
@@ -316,6 +329,7 @@
 		9344BE5F1AA82DA500E68858 = {
 			isa = PBXGroup;
 			children = (
+				93F4B4A11AAD72AB00E98F7A /* AVFoundation.framework */,
 				9344BE6A1AA82DA500E68858 /* Guess */,
 				9344BE871AA82DA500E68858 /* GuessTests */,
 				9344BE691AA82DA500E68858 /* Products */,
@@ -421,6 +435,26 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		93F4B4951AAD5CD700E98F7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93F4B4961AAD5CD700E98F7A /* CompetitionControllerView.h */,
+				93F4B4971AAD5CD700E98F7A /* CompetitionControllerView.m */,
+				93F4B4981AAD5CD700E98F7A /* CompetitionControllerView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		93F4B4991AAD5CD700E98F7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93F4B49C1AAD5CF900E98F7A /* DisPlayScore.h */,
+				93F4B49D1AAD5CF900E98F7A /* DisPlayScore.m */,
+				93F4B49F1AAD5D0800E98F7A /* DisPlayScore.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +538,7 @@
 				319D33C31AAC10A200DCE9BB /* question27.png in Resources */,
 				319D33C21AAC10A200DCE9BB /* question25.png in Resources */,
 				319D33BF1AAC10A200DCE9BB /* question22.png in Resources */,
+				93F4B4A01AAD5D0800E98F7A /* DisPlayScore.xib in Resources */,
 				319D33C61AAC10A200DCE9BB /* question3.png in Resources */,
 				319D33D11AAC10A200DCE9BB /* question4.png in Resources */,
 				319D33D21AAC10A200DCE9BB /* question40.png in Resources */,
@@ -515,6 +550,7 @@
 				319D33CB1AAC10A200DCE9BB /* question34.png in Resources */,
 				319D33D61AAC10A200DCE9BB /* question8.png in Resources */,
 				319D33C11AAC10A200DCE9BB /* question24.png in Resources */,
+				93F4B4A61AAD993B00E98F7A /* question26.png in Resources */,
 				319D33B51AAC10A200DCE9BB /* question13.png in Resources */,
 				319D33CE1AAC10A200DCE9BB /* question37.png in Resources */,
 				319D33BA1AAC10A200DCE9BB /* question18.png in Resources */,
@@ -524,13 +560,14 @@
 				319D33BB1AAC10A200DCE9BB /* question19.png in Resources */,
 				319D33C41AAC10A200DCE9BB /* question28.png in Resources */,
 				319D33D71AAC10A200DCE9BB /* question9.png in Resources */,
-				319D33F51AAC7C3000DCE9BB /* CompetitionControllerView.xib in Resources */,
+				93F4B49B1AAD5CD700E98F7A /* CompetitionControllerView.xib in Resources */,
 				319D33D31AAC10A200DCE9BB /* question5.png in Resources */,
 				319D33DF1AAC32E700DCE9BB /* winAlterView.xib in Resources */,
 				31B8E0781AA899DF0052498A /* SettingViewController.xib in Resources */,
 				31E93D5A1AA9F6AE00527541 /* PlayViewController.xib in Resources */,
 				319D33C51AAC10A200DCE9BB /* question29.png in Resources */,
 				319D33B81AAC10A200DCE9BB /* question16.png in Resources */,
+				93F4B4A41AAD73AF00E98F7A /* loop.mp3 in Resources */,
 				319D33CD1AAC10A200DCE9BB /* question36.png in Resources */,
 				319D33B21AAC10A200DCE9BB /* question10.png in Resources */,
 				319D33CC1AAC10A200DCE9BB /* question35.png in Resources */,
@@ -566,11 +603,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B8E07B1AA89A0F0052498A /* SettingModel.m in Sources */,
+				93F4B49E1AAD5CF900E98F7A /* DisPlayScore.m in Sources */,
 				319D33DA1AAC174C00DCE9BB /* playModel.m in Sources */,
 				319D33DD1AAC32D200DCE9BB /* winAlterView.m in Sources */,
 				9344C75E1AA83B6700E68858 /* MyNavViewController.m in Sources */,
 				9344BE6E1AA82DA500E68858 /* main.m in Sources */,
-				319D33F41AAC7C3000DCE9BB /* CompetitionControllerView.m in Sources */,
+				93F4B49A1AAD5CD700E98F7A /* CompetitionControllerView.m in Sources */,
 				31E93D5E1AA9F6F700527541 /* TitleCollectionViewCell.m in Sources */,
 				9344C7561AA835EE00E68858 /* BaseViewController.m in Sources */,
 				9344BE991AA82E0800E68858 /* AppDelegate.m in Sources */,

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompetitionControllerView">
             <connections>
                 <outlet property="GuessImageView" destination="4M5-Cd-cNB" id="dSh-9x-ap7"/>
-                <outlet property="_myCollectionView" destination="Lcj-8W-GPn" id="gRg-eA-vXf"/>
+                <outlet property="guessTitle1" destination="7cl-9Z-5ph" id="oaG-93-Ok8"/>
+                <outlet property="guessTitle2" destination="pOq-ob-6fa" id="FL2-uU-E9V"/>
+                <outlet property="guessTitle3" destination="O28-CK-eDM" id="eEx-XO-FCZ"/>
+                <outlet property="guessTitle4" destination="k7W-nl-JZV" id="hZb-aW-Bnu"/>
                 <outlet property="lastTimeLb" destination="Kw7-Kq-BcP" id="tTI-C3-8bu"/>
+                <outlet property="myCollectionView" destination="Lcj-8W-GPn" id="mgc-pf-HGV"/>
                 <outlet property="totalTime" destination="Iol-sO-wmf" id="eHb-H8-Myv"/>
                 <outlet property="view" destination="V9h-On-w4d" id="YOK-j7-b0L"/>
             </connections>
@@ -27,12 +31,18 @@
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="guessButtonClick:" destination="-1" eventType="touchUpInside" id="IGW-01-cgY"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O28-CK-eDM">
                     <rect key="frame" x="175" y="60" width="40" height="40"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="guessButtonClick:" destination="-1" eventType="touchUpInside" id="cyH-b4-CBI"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4M5-Cd-cNB">
                     <rect key="frame" x="35" y="120" width="250" height="220"/>
@@ -45,12 +55,18 @@
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="guessButtonClick:" destination="-1" eventType="touchUpInside" id="WDb-sJ-adU"/>
+                    </connections>
                 </button>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7W-nl-JZV">
                     <rect key="frame" x="245" y="60" width="40" height="40"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="guessButtonClick:" destination="-1" eventType="touchUpInside" id="2QP-24-5nQ"/>
+                    </connections>
                 </button>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lcj-8W-GPn">
                     <rect key="frame" x="10" y="388" width="300" height="140"/>
@@ -60,6 +76,10 @@
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7XA-Yq-do0"/>
+                        <outlet property="delegate" destination="-1" id="2DA-h3-Upp"/>
+                    </connections>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总时长" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeW-DH-e4i">
                     <rect key="frame" x="35" y="348" width="40" height="21"/>
@@ -82,7 +102,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iol-sO-wmf">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iol-sO-wmf">
                     <rect key="frame" x="105" y="348" width="40" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

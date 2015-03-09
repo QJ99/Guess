@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 QJ. All rights reserved.
 //
 
-#import "PlayViewController.h"
+#import "BaseViewController.h"
 
-@interface CompetitionControllerView : PlayViewController
+@interface CompetitionControllerView : BaseViewController
 
 @end

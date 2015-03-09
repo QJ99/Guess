@@ -10,9 +10,10 @@
 #import "PlayViewController.h"
 #import "SettingViewController.h"
 #import "CompetitionControllerView.h"
+#import <AVFoundation/AVFoundation.h>
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *voiceButton;
-
+@property (strong, nonatomic) AVAudioPlayer *player;
 @property (weak, nonatomic) IBOutlet UIButton *complateButton;
 @end
 
@@ -62,9 +63,29 @@
     
     
     BOOL selected =[[NSUserDefaults standardUserDefaults]boolForKey:@"voice"];
+    [self playBackgroundMusic:!selected];
     _voiceButton.selected = selected;
     [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_off"] forState:UIControlStateSelected];
     [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_on"] forState:UIControlStateNormal];
+}
+#pragma mark -是否播放背景音乐
+-(void)playBackgroundMusic:(BOOL)isPlay{
+    if (isPlay) {//打开音效
+        if (!_player) {
+            NSString *suoundFilePath = [[NSBundle mainBundle]pathForResource:@"loop" ofType:@"mp3"];
+            NSURL *fileURL = [[NSURL alloc]initFileURLWithPath:suoundFilePath];
+            AVAudioPlayer *newPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:fileURL error:nil];
+            _player = newPlayer;
+            [_player prepareToPlay];
+            _player.numberOfLoops = -1;
+        }
+        [_player play];
+        
+    }else{//关闭音效
+        if (_player.playing) {
+            [_player pause];
+        }
+    }
 }
 - (IBAction)startGuess:(UITapGestureRecognizer *)sender {
     PlayViewController *play = [[PlayViewController alloc]init];
@@ -79,14 +100,24 @@
     [[NSUserDefaults standardUserDefaults]setBool:!sender.selected forKey:@"voice"];
     [[NSUserDefaults standardUserDefaults]synchronize];
     sender.selected = !sender.selected;
+    [self playBackgroundMusic:!sender.selected];
     [sender setImage:[UIImage imageNamed:@"btn_voice_off"] forState:UIControlStateSelected];
     [sender setImage:[UIImage imageNamed:@"btn_voice_on"] forState:UIControlStateNormal];
 }
 - (IBAction)settingApp:(id)sender {
     SettingViewController *setting = [[SettingViewController alloc]init];
+    setting.customerPlay = _player;
+    [setting setDelegate:(id<settingControllerDelegate>)self];
     [self.navigationController pushViewController:setting animated:YES];
 }
-
+-(void)settingControler:(SettingViewController*)settingController isPlay:(BOOL)isplay{
+    if (isplay) {
+        [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_on"] forState:UIControlStateNormal];
+    }else{
+        _voiceButton.selected = !isplay;
+        [_voiceButton setImage:[UIImage imageNamed:@"btn_voice_off"] forState:UIControlStateSelected];
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -172,13 +172,13 @@
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：扔一颗石子打到两只鸟。比喻做一件事情得到两种好处。</string>
 		<key>question</key>
 		<string>question17</string>
 		<key>reslut</key>
-		<string></string>
+		<string>一石二鸟</string>
 		<key>text</key>
-		<string>为自把成为自是的结的青怎的斗边尊辩用和的还做自自</string>
+		<string>为自把成一为自是的结石的青怎二的鸟斗边尊辩用和的</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -186,19 +186,20 @@
 		<key>question</key>
 		<string>question18</string>
 		<key>reslut</key>
-		<string></string>
+		<string>归心似箭</string>
 		<key>text</key>
-		<string>物足没了生做闲不了春己个还断么要还的和那辩是做闲</string>
+		<string>物足没了生做闲归不了春心己个还断似么要还箭的和那</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：嘴里说得很好，心里想的却是另一套。指心口不一致。
+【出自】：汉·桓谭《新论·辨惑》：“如非其人，口是而心非者，虽寸断支解，而道犹不出也。”《抱朴子·微旨》：“口是心非，背向异辞。</string>
 		<key>question</key>
 		<string>question19</string>
 		<key>reslut</key>
-		<string></string>
+		<string>口是心非</string>
 		<key>text</key>
-		<string>我一那开的组的闲人能那主义的证义涉不唯和原是争个</string>
+		<string>我口一那开心的组的是闲人非能那主义的证义涉不唯和</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -206,169 +207,185 @@
 		<key>question</key>
 		<string>question20</string>
 		<key>reslut</key>
-		<string></string>
+		<string>德高望重</string>
 		<key>text</key>
-		<string>去主它则有情的不两好做的唯不用有的不我和能做我那</string>
+		<string>去主它则有情的重不两德好做的唯不高用有望的不我和</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：做一件事得到两方面的好处。
+【出自】：《晋书·束皙传》：“赐其十年炎复，以慰重迁之情，一举两得，外实内宽。</string>
 		<key>question</key>
 		<string>question21</string>
 		<key>reslut</key>
-		<string></string>
+		<string>一举两得</string>
 		<key>text</key>
-		<string>够主部情把则信斗了仰为和成组能辩要幅也一有必生尊</string>
+		<string>够主一举两得部情把则信斗了仰为和成组能辩要幅也一</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：把大的材料当成小的材料用。比喻使用不当，浪费人才。
+【出自】：晋·石崇《许巢论》：“盖闻圣人在位，则群材必举，官才任能，轻重允宜，大任已备，则不抑大材使居小位；小材已极其分，则不以积久而合处过材之位</string>
 		<key>question</key>
 		<string>question22</string>
 		<key>reslut</key>
-		<string></string>
+		<string>大材小用</string>
 		<key>text</key>
-		<string>的是的必尊开逸能成有的仰物修涉了是是能开为不的己</string>
+		<string>的是的必尊开逸能大成有小的仰材物修涉用了是是能开</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：明里暗里都在进行争斗。形容各用心思，互相排挤。
+【出自】：巴金《家》三：“明明是一家人，然而没有一天不在明争暗斗</string>
 		<key>question</key>
 		<string>question23</string>
 		<key>reslut</key>
-		<string></string>
+		<string>明争暗斗</string>
 		<key>text</key>
-		<string>闲的主春开唯我把唯自己能情有结是赌修抛做果逸了是</string>
+		<string>闲的主春开明唯我暗把唯自争斗己能情有结是赌修抛做</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：才：才华。比喻人极有才华。
+【出自】：《南史·谢灵运传》：“天下才共一石，曹子建独得八斗，我得一斗，自古及今共用一斗</string>
 		<key>question</key>
 		<string>question24</string>
 		<key>reslut</key>
-		<string></string>
+		<string>才高八斗</string>
 		<key>text</key>
-		<string>做幅修我斗的和能有的好去注的斗修么把主的义要的赌</string>
+		<string>做幅修我斗的和能有的好去注的才修么把八主的义高</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：飞蛾扑到火上，比喻自取灭亡。
+【出自】：《梁书·到溉传》：“如飞蛾之赴火，岂焚身之可吝</string>
 		<key>question</key>
 		<string>question25</string>
 		<key>reslut</key>
-		<string></string>
+		<string>飞蛾扑火</string>
 		<key>text</key>
-		<string>点新个逸了谁也一不情物怎的一了赌严我呢青有尊么不</string>
+		<string>点新个飞逸了谁也一蛾不情物扑怎的一火了赌严我呢青</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：三、四：表示杂乱。形容说话做事错杂紊乱。
+【出自】：明·许仲琳《封神演义》第四十四回：“连拜了三四日，就把子牙拜的颠三倒四，坐卧不安。</string>
 		<key>question</key>
 		<string>question26</string>
 		<key>reslut</key>
-		<string></string>
+		<string>颠三倒四</string>
 		<key>text</key>
-		<string>物有的去没能历义那的可好还是做和和唯了争唯义没逸</string>
+		<string>物有的颠倒去没能三历义那四的可好还是做和和唯了争</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：在困苦中勉强自寻欢乐。
+【出自】：宋·陈造《同陈宰黄簿游灵山八首》自注：“宰运：‘吾辈可谓忙里偷闲，苦中作乐</string>
 		<key>question</key>
 		<string>question27</string>
 		<key>reslut</key>
-		<string></string>
+		<string>苦中作乐</string>
 		<key>text</key>
-		<string>唯则统能断还辩涉成逸和没则够要信我那是不断是用主</string>
+		<string>唯则统能断博大还苦中辩涉成作乐精深逸和没则够要信</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：形容人多手杂，动作纷乱。
+【出自】：宋·释普济《五灯会元》卷二十：“上堂七手八脚，三头两面，耳听不闻，眼觑不见，苦乐逆顺，打成一片</string>
 		<key>question</key>
 		<string>question28</string>
 		<key>reslut</key>
-		<string></string>
+		<string>七手八脚</string>
 		<key>text</key>
-		<string>却新青唯开和信可谁有用断没的史义谁我物义够谁的则</string>
+		<string>却新青唯开和信可谁有八脚用断没的史义谁我七手物义</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：色：脸色。形容人得意兴奋的样子。
+【出自】：清·李宝嘉《官场现形记》第三十二回：“余荩臣一听‘明保’二字，正是他心上最为关切之事，不禁眉飞色舞</string>
 		<key>question</key>
 		<string>question29</string>
 		<key>reslut</key>
-		<string></string>
+		<string>眉飞色舞</string>
 		<key>text</key>
-		<string>够爱要主成义注则义怜严没必唯有还要情却辩机情幅一</string>
+		<string>够爱要主成义眉色飞舞注则义怜严没必唯有还要情却辩</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：博：广，多。形容思想和学识广博高深。
+【出自】：明·姜世昌《〈逸周书〉序》：“迄今读书，若揭日月而行千载，其博大精深之旨，非晚世学者所及</string>
 		<key>question</key>
 		<string>question30</string>
 		<key>reslut</key>
-		<string></string>
+		<string>博大精深</string>
 		<key>text</key>
-		<string>的点也情也部没幅尊却抛义历义物的自的么闲一证的不</string>
+		<string>的点也情也部没幅尊却抛义历义大博物的自的么闲精深</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：新仇加旧恨。形容仇恨深。
+【出自】：宋·柳永《内家娇》：“奈少年，自有新仇旧恨，消遣无计。</string>
 		<key>question</key>
 		<string>question31</string>
 		<key>reslut</key>
-		<string></string>
+		<string>新仇旧恨</string>
 		<key>text</key>
-		<string>春要了的么危新一够可做那用了躲严春和历己断分个情</string>
+		<string>春要了的么危新一够可做那用新旧了躲严春和历己仇恨</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：异：不同。原指夫妇生活在一起，但感情不和。比喻同做一件事而心里各有各的打算。
+【出自】：宋·陈亮《与朱元晦秘书书》：“同床各做梦，周公且不能学得，何必一一说到孔明哉</string>
 		<key>question</key>
 		<string>question32</string>
 		<key>reslut</key>
-		<string></string>
+		<string>同床异梦</string>
 		<key>text</key>
-		<string>的却情么是怎我做生的我果情和还逸注把那达己个没它</string>
+		<string>的却情么是怎我做生同床的我果情异梦和还逸注把那达</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：比喻用恶毒的话污蔑或辱骂别人。
+【出自】：宋·晓莹《罗湖野录》卷二：“含血喷人，先污其口；百丈野狐，失头狂走。</string>
 		<key>question</key>
 		<string>question33</string>
 		<key>reslut</key>
-		<string></string>
+		<string>血口喷人</string>
 		<key>text</key>
-		<string>是赌部证足历还是的成情却开一一做生是不和的物够青</string>
+		<string>是赌部证足历血喷口还是人的成情却开一一做生是不和</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：禁：承受。形容身体娇弱，连风吹都经受不起。
+【出自】：唐·杜甫《江雨有怀郑典设诗》：“乱波纷披已打岸，弱云狼藉不禁风。</string>
 		<key>question</key>
 		<string>question34</string>
 		<key>reslut</key>
-		<string></string>
+		<string>弱不禁风</string>
 		<key>text</key>
-		<string>原的它的不主点自做够斗的的原主主和组闲有爱一一有</string>
+		<string>原的它的弱不主风点自做够不斗的的禁原主主和组闲有</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：形容事情已到眼前，情势十分紧迫。
+【出自】：《庄子·庚桑楚》：“曰：向吾见若眉睫之间。”《列子·仲尼》：“远在八荒之外，近在眉睫之内</string>
 		<key>question</key>
 		<string>question35</string>
 		<key>reslut</key>
-		<string></string>
+		<string>迫在眉睫</string>
 		<key>text</key>
-		<string>史为危它好义必还怎还一的做注边尊一主尊信历己和我</string>
+		<string>史为危它好义必还怎迫在眉睫还一尊一主尊信历己和我</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：包：包容。形容胆子极大。
+【出自】：清·杨潮观《吟风阁杂剧·黄石婆授计逃关》：“因此上胆大包天，一铁锺，几乎把秦王断送</string>
 		<key>question</key>
 		<string>question36</string>
 		<key>reslut</key>
-		<string></string>
+		<string>胆大包天</string>
 		<key>text</key>
-		<string>生是赌的的边斗是原呢的和用能己用也不尊要情开怎仰</string>
+		<string>生是赌的大的边斗胆是原呢的天和用能包己用也不尊要</string>
 	</dict>
 	<dict>
 		<key>description</key>
@@ -376,29 +393,31 @@
 		<key>question</key>
 		<string>question37</string>
 		<key>reslut</key>
-		<string></string>
+		<string>灯红酒绿</string>
 		<key>text</key>
-		<string>了的唯物物的唯的点怜我赌点己却爱能原争信的部要开</string>
+		<string>了的唯物物的灯唯的酒点怜我红赌点己却绿爱能原争信</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：把山上的草木都当做敌兵。形容人在惊慌时疑神疑鬼。
+【出自】：《晋书·苻坚载记》：“坚与苻融登城而望王师，见部阵齐整，将士精锐；又北望八公山上草森皆类人形，顾谓融曰：‘此亦劲敌也，何谓少乎？’怃然有惧色</string>
 		<key>question</key>
 		<string>question38</string>
 		<key>reslut</key>
-		<string></string>
+		<string>草木皆兵</string>
 		<key>text</key>
-		<string>两爱足能结事的情新的个去的足尊斗必有一也原结义严</string>
+		<string>两爱足能结事的草木皆兵情新的个去的足尊斗必有一也</string>
 	</dict>
 	<dict>
 		<key>description</key>
-		<string></string>
+		<string>【解释】：崇：高；峻：山高而陡。高大险峻的山岭。
+【出自】：晋·王羲之《兰亭集序》：“此地有崇山峻岭，茂林修竹</string>
 		<key>question</key>
 		<string>question39</string>
 		<key>reslut</key>
-		<string></string>
+		<string>崇山峻岭</string>
 		<key>text</key>
-		<string>尊却不和物不的够情能怎可的能成点斗斗么的争爱的尊</string>
+		<string>尊却不和物不的够情能怎可的崇山峻岭能成点斗斗么的</string>
 	</dict>
 </array>
 </plist>
