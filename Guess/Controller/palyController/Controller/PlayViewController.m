@@ -12,7 +12,7 @@
 #import "playModel.h"
 #import "winAlterView.h"
 static NSString * CellIdentifier = @"Cell";
-@interface PlayViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface PlayViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle1;
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle2;
 @property (weak, nonatomic) IBOutlet UIButton *guessTitle3;
@@ -122,6 +122,10 @@ static NSString * CellIdentifier = @"Cell";
     NSLog(@"%ld",(long)sender.tag);
     if (sender.tag == 0) {//提示答案
         playModel *mode = _modelArrayM[_currentIndex-1];
+        [_guessButtonArrayM enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            UIButton *button = (UIButton*)obj;
+            [button setTitle:nil forState:UIControlStateNormal];
+        }];
         for (int i =0; i<[mode.reslut length]; i++) {
             [_guessButtonArrayM enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 UIButton *button = (UIButton*)obj;
@@ -258,8 +262,33 @@ static NSString * CellIdentifier = @"Cell";
             }];
         }];
         
+    }else if ([title isEqualToString:@"分享"]){
+        UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"是否要分享" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alter show];
     }
 }
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        _currentIndex = _currentIndex+1;
+        playModel *model = _modelArrayM[_currentIndex-1];
+        [_datasource removeAllObjects];
+        [_datasource addObjectsFromArray:model.textArray];
+        [_myCollectionView reloadData];
+        [_sourceLabel setText:[NSString stringWithFormat:@"%ld",(_currentIndex-1)*100]];
+        [_titleLabel setText:[NSString stringWithFormat:@"%ld",(long)_currentIndex]];
+        [_guessImage setImage:[UIImage imageNamed:model.picName]];
+        [UIView animateWithDuration:0.3 animations:^{
+            _winAlterview.center = CGPointMake(self.view.frame.size.width*0.5, self.view.frame.size.height+_winAlterview.frame.size.height*0.5);
+        }completion:^(BOOL finished) {
+            [_guessButtonArrayM enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                UIButton *guessButton = (UIButton*)obj;
+                [guessButton setTitle:@"" forState:UIControlStateNormal];
+                
+            }];
+        }];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

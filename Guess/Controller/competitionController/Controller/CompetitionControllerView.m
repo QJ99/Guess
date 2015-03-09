@@ -223,22 +223,6 @@ static NSString * CellIdentifier = @"Cell";
                 }];
             }
         }
-        
-//        if([_lastTimeLb.text intValue]>= _currentIndex*15){//超时
-//            _currentIndex = _currentIndex+1;
-//            if (_currentIndex <= [_modelArrayM count]-1) {
-//                playModel *model = _modelArrayM[_currentIndex-1];
-//                [_datasource removeAllObjects];
-//                [_datasource addObjectsFromArray:model.textArray];
-//                [_myCollectionView reloadData];
-//                [_GuessImageView setImage:[UIImage imageNamed:model.picName]];
-//                [_titleLabel setText:[NSString stringWithFormat:@"%ld",(long)_currentIndex]];
-//                [_guessButtonArrayM enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-//                    UIButton *guessButton = (UIButton*)obj;
-//                    [guessButton setTitle:nil forState:UIControlStateNormal];
-//                }];
-//            }
-//        }
     }
 }
 -(void)disPlayScore:(DisPlayScore*)disPlayScore didselectTitle:(NSString*)title{
@@ -268,11 +252,22 @@ static NSString * CellIdentifier = @"Cell";
             
         }
     }else if ([title isEqualToString:@"分享"]){
-    
+        UIAlertView *alter = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"是否要分享" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alter show];
     }else if ([title isEqualToString:@"主界面"]){
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+      
+        [UIView animateWithDuration:0.3 animations:^{
+             _displayScore.center = CGPointMake(self.view.frame.size.width*0.5, self.view.frame.size.height+_displayScore.frame.size.height*0.5);
+        }];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
